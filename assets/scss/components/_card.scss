@@ -1,0 +1,38 @@
+.lv-card {
+  @extend .card;
+  
+  .card-img-2nd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.5s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .card-tag {
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+
+  .card-body {
+    color: $primary;
+
+    .card-title {
+      color: $primary;
+    }
+  }
+   .card-footer {
+    .card-link {
+      padding-right: 1rem;
+      font-family: map-get($lv_fonts, link);
+      font-weight: 200;
+      text-decoration: underline;
+      align-self: end;
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
+}

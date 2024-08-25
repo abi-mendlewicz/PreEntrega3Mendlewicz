@@ -1,0 +1,13 @@
+footer {
+  nav {
+    a {
+      svg {
+        transition: 1.5s;
+        &:hover {
+          transform: scale(1.25);
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+body {
+  color: $primary;
+  font-family: map-get($lv_fonts, body);
+  font-optical-sizing: auto;
+
+  h1, h2, h3 {
+    font-family: map-get($lv_fonts, heading);
+    font-weight: 700;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+        li {
+        display: inline-block;
+      }
+    }
+  }
+}

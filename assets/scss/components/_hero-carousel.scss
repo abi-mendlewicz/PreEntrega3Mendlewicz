@@ -1,0 +1,88 @@
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-carousel {
+  @extend .carousel;
+  .carousel-inner, .carousel-indicators {
+    opacity: 0;
+    animation: show 2s linear 3s 1 forwards;
+  }
+
+  .hero-carousel-headings {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    text-align: center;
+
+    h1 {
+      @include bg-semitransparent(white, 0.5);
+      font-size: 1.5rem;
+      span {
+        opacity: 0;
+        animation-name: show;
+        animation-duration: 0.75s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+        &:last-child {
+          animation-delay: 0.75s;
+        }
+      }
+    }
+
+    h2 {
+      @include bg-semitransparent(white, 0.5);
+      font-size: 1.25rem;
+      span {
+        opacity: 0;
+        animation-name: show;
+        animation-duration: 0.75s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+        &:first-child {
+          animation-delay: 1.5s;
+        }
+  
+        &:last-child {
+          animation-delay: 2.25s;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      h1 {
+        font-size: 2.25rem;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    button {
+      border-radius: 100%;
+      background-color: $yellow;
+    }
+  }
+}

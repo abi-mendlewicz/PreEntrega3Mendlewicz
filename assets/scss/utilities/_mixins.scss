@@ -1,0 +1,4 @@
+@mixin bg-semitransparent($color, $alpha) {
+  background-color: rgba($color, $alpha)
+}
+

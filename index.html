@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="En La Veterinaria, ofrecemos atención integral para tus mascotas, incluyendo servicios veterinarios, diagnósticos y bienestar. Además, contamos con una amplia gama de productos para el cuidado de tus animales. ¡Confía en nosotros para la salud y felicidad de tus compañeros peludos!">
+  <meta name="keywords" content="veterinaria, servicios veterinarios, cuidados para mascotas, productos para mascotas, atención animal, salud animal, diagnóstico veterinario, tienda para mascotas, bienestar de mascotas, consultas veterinarias">
+  <meta name="author" content="@abi_mendlewicz">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <!-- hojas de estilo -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- título de página -->
+  <title>La Veterinaria</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg px-3 px-lg-5 bg-primary">
+      <div class="container-fluid p-0">
+        <!-- logo con enlace a página de inicio -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/images/logo.png" alt="Logo" class="img-fluid">
+        </a>
+        <!-- fin logo con enlace a página de inicio -->
+        <!-- botón para desplegar menú en offcanvas para pantallas menores a 992px -->
+        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Menú desplegable">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </button>
+        <!-- fin botón para desplegar menú en offcanvas para pantallas menores a 992px -->
+        <!-- offcanvas con menú principal para pantallas menores a 992px -->
+        <div class="offcanvas offcanvas-end justify-content-end bg-primary" id="navMain">
+          <!-- botón de cierre de offcanvas -->
+          <div class="offcanvas-header justify-content-end">
+            <button type="button" class="btn bg-transparent text-white" data-bs-dismiss="offcanvas" aria-label="Cerrar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+              </svg>
+            </button>
+          </div>
+          <!-- fin botón de cierre de offcanvas -->
+          <!-- menú de navegación principal -->
+          <div class="navbar-nav offcanvas-body justify-content-lg-end">
+            <a class="nav-link text-center text-white" href="./pages/servicios.html">Servicios</a>
+            <a class="nav-link text-center text-white" href="./pages/productos.html">Productos</a>
+            <a class="nav-link text-center text-white" href="./pages/quienes-somos.html">Quiénes somos</a>
+            <a class="nav-link text-center text-white" href="./pages/contacto.html">Contacto</a>
+            <div>
+              <button type="button" class="nav-link d-flex justify-content-center align-items-center text-white mx-auto my-1 position-relative"  data-bs-toggle="modal" data-bs-target="#carrito-modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16" role="img" aria-label="Carrito">
+                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                </svg>
+                <span class="position-absolute top-25 start-100 translate-middle badge rounded-pill border border-warning">
+                  0
+                  <span class="visually-hidden">Productos en el carrito de compras.</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <!-- menú de navegación principal -->
+        </div>
+        <!-- fin offcanvas con menú principal para pantallas menores a 992px -->
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- hero con slides -->
+    <div id="hero" class="hero-carousel slide" data-bs-ride="carousel">
+      <!-- slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- video para mobile 9:16 -->
+          <video class="d-block d-sm-none w-100" autoplay loop muted>
+            <source src="./assets/videos/inicio/video-hero-mobile-1.mp4" type="video/mp4" class="d-none d-sm">
+            <img src="./assets/images/inicio/hero-mobile-1.png" alt="Foxie, uno de nuestros clientes perro, en su hogar.">
+          </video>
+          <!-- fin video para mobile 9:16 -->
+          <!-- video para descktop 16:9 -->
+          <video class="d-none d-sm-block w-100" autoplay loop muted>
+            <source src="./assets/videos/inicio/video-hero-desktop-1.mp4" type="video/mp4" class="d-none d-sm">
+            <img src="./assets/images/inicio/hero-desktop-1.png" alt="Pompón, el perro, siendo oscultado por uno de nuestros profesionales.">
+          </video>
+          <!-- fin video para descktop 16:9 -->
+        </div>
+        <div class="carousel-item">
+          <!-- video para mobile 9:16 -->
+          <video class="d-block d-sm-none w-100" autoplay loop muted>
+            <source src="./assets/videos/inicio/video-hero-mobile-2.mp4" type="video/mp4" class="d-none d-sm">
+            <img src="./assets/images/inicio/hero-mobile-2.png" alt="Pompón, el perro, atendiéndose en nuestra peluquería canina.">
+          </video>
+          <!-- fin video para mobile 9:16 -->
+          <!-- video para descktop 16:9 -->
+          <video class="d-none d-sm-block w-100" autoplay loop muted>
+            <source src="./assets/videos/inicio/video-hero-desktop-2.mp4" type="video/mp4" class="d-none d-sm">
+            <img src="./assets/images/inicio/hero-desktop-2.png" alt="Foxie, uno de nuestros clientes perro, con sus dueños Ana y Juan paseando por las montañas.">
+          </video>
+          <!-- fin video para descktop 16:9 -->
+        </div>
+        <div class="carousel-item">
+          <!-- video para mobile 9:16 -->
+          <video class="d-block d-sm-none w-100" autoplay loop muted>
+            <source src="./assets/videos/inicio/video-hero-mobile-3.mp4" type="video/mp4" class="d-none d-sm">
+            <img src="./assets/images/inicio/hero-mobile-3.png" alt="Uno de nuestros profesionales atendiendo al perro Max, uno de nuestros clientes más antiguos.">
+          </video>
+          <!-- fin video para mobile 9:16 -->
+          <!-- video para descktop 16:9 -->
+          <video class="d-none d-sm-block w-100" autoplay loop muted>
+            <source src="./assets/videos/inicio/video-hero-desktop-3.mp4" type="video/mp4" class="d-none d-sm">
+            <img src="./assets/images/inicio/hero-desktop-3.png" alt="Rubi, el perro lazarillo, en su consulta de rutina en nuestra clínica.">
+          </video>
+          <!-- fin video para descktop 16:9 -->
+        </div>
+      </div>
+      <!-- fin slides -->
+      <!-- títulos sobreimpresos -->
+      <div class="hero-carousel-headings d-flex flex-column px-3 px-md-5 w-100">
+        <h1 class="mx-auto px-2"><span>Tu compañero de vida</span> <span>merece lo mejor</span></h1>
+        <h2 class="mx-auto px-2"><span>Experiencia y cariño</span> <span>al alcance de un clic</span></h2>
+      </div>
+      <!-- fin títulos sobreimpresos -->
+      <!-- indicador de posición de slide -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+        <button type="button" data-bs-target="#hero" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+        <button type="button" data-bs-target="#hero" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+      </div>
+      <!-- fin indicador de posición de slide -->
+    </div>
+    <!-- fin hero con slides -->
+    <!-- sección servicios -->
+    <section>
+      <h2 class="my-5 text-center">Nuestros servicios</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-3 mx-lg-5">
+        <article class="col">
+          <div class="lv-card">
+            <img src="./assets/images/servicios/cirugia.png" alt="Sala de cirugía" class="card-img-top rounded-5">
+            <div class="card-body">
+              <h3 class="card-title">Cirugía veterinaria</h3>
+              <p class="card-text">Nuestro centro de Cirugía Veterinaria con los más avanzados equipos para garantizar la seguridad de tu mejor amigo durante el acto quirúrgico.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-end">
+              <a href="./pages/servicios.html#cirugia" class="card-link">Saber más</a>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="lv-card">
+            <img src="./assets/images/servicios/diagnostico.png" alt="Veterinario realizando diagnóstico" class="card-img-top rounded-5">
+            <div class="card-body">
+              <h3 class="card-title">Diagnóstico veterinario</h3>
+              <p class="card-text">Evaluamos a tu mascota con la más alta tecnología y atención personalizada.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-end">
+              <a href="./pages/servicios.html#diagnostico" class="card-link">Saber más</a>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="lv-card">
+            <img src="./assets/images/servicios/laboratorio.png" alt="Laboratorio veterinario" class="card-img-top rounded-5">
+            <div class="card-body">
+              <h3 class="card-title">Laboratorio veterinario</h3>
+              <p class="card-text">Resultados rápidos y confiables: nuestro laboratorio veterinario ofrece pruebas avanzadas para la salud óptima de tu mascota.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 text-end">
+              <a href="./pages/servicios.html#laboratorio" class="card-link">Saber más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- fin sección servicios -->
+    <!-- separador de secciones-->
+    <div class="row justify-content-center mx-0 my-5">
+      <hr class="col-2 border border-5 border-success opacity-100">
+    </div>
+    <!-- fin separador de secciones-->
+    <!-- sección productos -->
+    <section>
+      <h2 class="my-5 text-center">Productos destacados</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-3 mx-lg-5">
+        <article class="col">
+          <div class="lv-card">
+            <div class="position-relative">
+              <img src="./assets/images/productos/comida-perro.png" alt="Comida para perros." class="card-img-top rounded-5">
+              <img src="./assets/images/productos/comida-perro-2.jpg" alt="Comida para perros." class="card-img-2nd rounded-5">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Comida para perros</h3>
+              <p class="card-text">$1.500</p>
+            </div>
+            <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+              <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="lv-card">
+            <div class="position-relative">
+              <img src="./assets/images/productos/comida-gato.png" alt="Comida para gatos." class="card-img-top rounded-5">
+              <img src="./assets/images/productos/comida-gato-2.jpg" alt="Comida para gatos." class="card-img-2nd rounded-5">
+              <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-warning">AGOTADO</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Comida para gatos</h3>
+              <p class="card-text">$1.500</p>
+            </div>
+            <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+              <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="lv-card">
+            <div class="position-relative">
+              <img src="./assets/images/productos/kit-pecera.png" alt="Comida para perros." class="card-img-top rounded-5">
+              <img src="./assets/images/productos/kit-pecera-2.jpg" alt="Comida para perros." class="card-img-2nd rounded-5">
+              <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-success">OFERTA</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Kit para peceras</h3>
+              <p class="card-text m-0 text-decoration-line-through">$2.750</p>
+              <p class="card-text text-success">PRECIO OFERTA $2.200</p>
+            </div>
+            <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+              <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- fin sección productos -->
+    <!-- separador de secciones-->
+    <div class="row justify-content-center mx-0 my-5">
+      <hr class="col-2 border border-5 border-warning opacity-100">
+    </div>
+    <!-- fin separador de secciones-->
+    <!-- sección testimonios -->
+    <section class="mb-3">
+      <h2 class="my-5 text-center">Testmonios</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mx-3 mx-lg-5">
+        <article id="review-1">
+          <div class="lv-card align-items-center">
+            <div class="position-relative w-75">
+              <img src="./assets/images/testimonios/ana.png" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title">Ana M.</h3>
+              <p class="card-text">"¡Una experiencia increíble! El equipo es amable, profesional y se nota que realmente ama a los animales. Mi perro siempre sale contento después de cada visita. Recomiendo encarecidamente esta veterinaria."</p>
+            </div>
+          </div>
+        </article>
+        <article id="review-2">
+          <div class="lv-card align-items-center">
+            <div class="position-relative w-75">
+              <img src="./assets/images/testimonios/carlos.png" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title">Carlos R.</h3>
+              <p class="card-text">"El mejor cuidado para mi gato, sin duda. La atención es excepcional, y el personal se tomó el tiempo para explicar cada detalle del diagnóstico y tratamiento. Me sentí seguro y bien informado."</p>
+            </div>
+          </div>
+        </article>
+        <article id="review-3">
+          <div class="lv-card align-items-center">
+            <div class="position-relative w-75">
+              <img src="./assets/images/testimonios/laura.png" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title">Laura T.</h3>
+              <p class="card-text">"No puedo agradecer lo suficiente por el cariño y la dedicación que muestran con cada mascota. Mi conejo estaba en malas condiciones y gracias a su excelente servicio está mucho mejor. ¡Gracias por todo!"</p>
+            </div>
+          </div>
+        </article>
+        <article id="review-4">
+          <div class="lv-card align-items-center">
+            <div class="position-relative w-75">
+              <img src="./assets/images/testimonios/javier.png" alt="Imagen de perfil de cliente" class="card-img-top rounded-circle">
+            </div>
+            <div class="card-body text-center">
+              <h3 class="card-title">Javier S.</h3>
+              <p class="card-text">"Un equipo profesional y dedicado. La clínica tiene un ambiente acogedor y el servicio es rápido y eficiente. Me encantó cómo trataron a mi cachorro, y ahora siempre confío en ellos para su salud."</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- fin sección testimonios -->
+    <!-- modal carrito -->
+    <div class="modal fade" id="carrito-modal" tabindex="-1" aria-labelledby="carrito-modal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon me-2" viewBox="0 0 16 16">
+                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"/>
+                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+              </svg>
+              ATENCIÓN
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Tu carrito está vacío.</p>
+            <p class="mb-0">Añade productos desde nuestra tienda.</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-sm btn-outline-warning text-primary" data-bs-dismiss="modal">Entendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin modal carrito -->
+    <!-- modal alerta de funciones no desarrolladas -->
+    <div class="modal fade" id="alert-no-function" tabindex="-1" aria-labelledby="alert-no-function" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon me-2" viewBox="0 0 16 16">
+                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"/>
+                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+              </svg>
+              ATENCIÓN
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Esta función no está disponible aún. Lo sentimos.</p>
+            <p class="mb-0">Por favor, vuelve a intentarlo en su próxima visita!</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-sm btn-outline-warning text-primary" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin modal alerta de funciones no desarrolladas -->
+  </main>
+  <footer>
+    <div class="row m-0 py-2 py-sm-3 px-3 px-lg-5 bg-primary">
+      <!-- copyright -->
+      <div class="col-7 col-sm-9 p-0 py-lg-3">
+        <p class="m-0 small text-white">&copy 2024 <strong>La Veterinaria</strong>. Todos los derechos reservados.</p>
+      </div>
+      <!-- fin copyright -->
+      <!-- menú enlaces a redes sociales -->
+      <nav class="nav col-5 col-sm-3 pe-3 pb-3 pb-sm-2 pb-lg-0 justify-content-end align-items-end align-items-lg-center">
+        <a class="icon-link text-white" href="https://www.facebook.com/" title="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" role="img" aria-label="Facebook">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg>
+        </a>
+        <a class="icon-link mx-3 text-white" text-white href="https://www.instagram.com/" title="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" role="img" aria-label="Instagram">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg>
+        </a>
+        <a class="icon-link position-fixed bottom-0 end-0 p-3 me-lg-4 mb-2 mb-lg-3 bg-primary rounded-circle text-white" href="https://api.whatsapp.com/" title="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16" role="img" aria-label="Whatsapp">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg>
+        </a>
+      </nav>
+      <!-- fin menú enlaces a redes sociales -->
+    </div>
+  </footer>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
