@@ -11875,9 +11875,22 @@ body nav ul li {
   display: inline-block;
 }
 
+@media (min-width: 992px) {
+  /* Bordes */
+  .lv-border-rounded-top-right {
+    border-top-right-radius: 50%;
+  }
+  .lv-border-rounded-bottom-left {
+    border-bottom-left-radius: 50%;
+  }
+}
 header nav a {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
+}
+
+main {
+  min-height: 100vh;
 }
 
 footer nav a svg {

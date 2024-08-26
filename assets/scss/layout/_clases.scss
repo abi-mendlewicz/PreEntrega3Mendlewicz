@@ -1,0 +1,10 @@
+@include media-breakpoint-up(lg) {
+  /* Bordes */
+  .lv-border-rounded-top-right {
+    @include border-top-end-radius(50%);
+  }
+
+  .lv-border-rounded-bottom-left {
+    @include border-bottom-start-radius(50%);
+  }
+}
