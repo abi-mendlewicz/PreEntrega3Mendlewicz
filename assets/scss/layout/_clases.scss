@@ -7,4 +7,9 @@
   .lv-border-rounded-bottom-left {
     @include border-bottom-start-radius(50%);
   }
+
+  /* Filtros */
+  .lv-filter-grayscale {
+    filter: grayscale(1);
+  }
 }

@@ -65,7 +65,100 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="my-5 mx-3 mx-lg-5">
+    <!-- títulos de página -->
+    <h1>Contáctanos</h1>
+    <!-- fin títulos de página -->
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Quiénes somos</li>
+      </ol>
+    </nav>
+    <!-- fin breadcrumb -->
+    <section class="container-sm pt-3">
+      <!-- formulario de contacto -->
+      <form method="post" class="contact-form mx-3 p-5 border border-primary rounded-5">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          <label for="nombre">Nombre</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" name="email" placeholder="nombre@dominio.com" autocomplete="on" required>
+          <label for="email">Correo electrónico</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+          <label for="asunto">Asunto</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Dejanos tu mensaje" id="mensaje" style="height: 10rem"></textarea>
+          <label for="mensaje">Mensaje</label>
+        </div>
+        <div class="py-3 text-end">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+      <!-- formulario de contacto -->
+    </section>
+    <!-- separador de secciones-->
+    <div class="row justify-content-center my-5">
+      <hr class="col-2 m-0 border border-5 border-success opacity-100">
+    </div>
+    <!-- fin separador de secciones-->
+    <section class="container-sm">
+      <div class="row mx-3 align-items-end">
+        <!-- mapa de google incrustado -->
+        <div class="col-12 col-md-8 order-md-1">
+          <iframe
+            class="lv-filter-grayscale"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3886.595685542629!2d-56.167946101530895!3d-34.911541184310536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2suy!4v1722544971168!5m2!1ses!2suy"
+            width="100%"
+            height="auto"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <!-- fin mapa de google incrustado -->
+        <!-- datos de contacto -->
+        <div class="col-12 col-md-4">
+          <p class="mb-0 text-md-end">Durazno 2005</p>
+          <p class="text-md-end">Montevideo</p>
+          <p class="mb-0 text-md-end">
+            Tel:
+            <a href="tel:099123456" class="link-primary"> 099 123 456</a>
+          </p>
+        </div>
+        <!-- fin datos de contacto -->
+      </div>
+    </section>
+    <!-- modal carrito -->
+    <div class="modal fade" id="carrito-modal" tabindex="-1" aria-labelledby="carrito-modal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon me-2" viewBox="0 0 16 16">
+                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"/>
+                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+              </svg>
+              ATENCIÓN
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Tu carrito está vacío.</p>
+            <p class="mb-0">Añade productos desde nuestra tienda.</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-sm btn-outline-warning text-primary" data-bs-dismiss="modal">Entendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin modal carrito -->
   </main>
   <footer>
     <div class="row m-0 py-2 py-sm-3 px-3 px-lg-5 bg-primary">
