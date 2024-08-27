@@ -1,0 +1,50 @@
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-fade {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  1% {
+    height: 100vh;
+    opacity: 0;
+  }
+  10% {
+    height: 100vh;
+    opacity: 1;
+  }
+  90% {
+    height: 100vh;
+    opacity: 1;
+  }
+  91% {
+    height: 100vh;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fly-up {
+  0% {
+    transform: translateY(150vh);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-150vh);
+  }
+}

@@ -1,0 +1,76 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 2rem;
+  width: 100vw;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 9999;
+  animation-name: show-fade;
+  animation-duration: 8s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+
+  .popup-balloons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    transform: translateY(150vh);
+    animation-name: fly-up;
+    animation-duration: 6s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    $balloons: (
+      "balloon1": (
+        "fill": $green,
+        "margin-bottom": 3rem
+      ),
+      "balloon2": (
+        "fill": $red,
+        "margin-bottom": 5rem
+      ),
+      "balloon3": (
+        "fill": $yellow,
+        "margin-bottom": 2rem
+      ),
+      "balloon4": (
+        "fill": $red,
+        "margin-bottom": 4rem
+      ),
+      "balloon5": (
+        "fill": $green,
+        "margin-bottom": 6rem
+      ),
+    );
+
+    @each $balloon, $attrs in $balloons {
+      .#{$balloon} {
+        @include setup-balloon($attrs);
+      }
+    }
+  }
+
+  .popup-dialog {
+    max-width: 520px;
+    padding: 2rem;
+    background-image: linear-gradient(45deg, white, lightgreen, white);
+    border-radius: 2rem;
+    transform: translateY(150vh);
+    animation-name: fly-up;
+    animation-duration: 6s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}

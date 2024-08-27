@@ -1,10 +1,58 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes show-fade {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  1% {
+    height: 100vh;
+    opacity: 0;
+  }
+  10% {
+    height: 100vh;
+    opacity: 1;
+  }
+  90% {
+    height: 100vh;
+    opacity: 1;
+  }
+  91% {
+    height: 100vh;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+@keyframes fly-up {
+  0% {
+    transform: translateY(150vh);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-150vh);
+  }
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #003366;
@@ -11952,23 +12000,17 @@ footer nav a svg:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   text-decoration: underline;
-  align-self: end;
 }
 .lv-card .card-footer .card-link:hover {
-  font-weight: 600;
+  font-style: italic;
+}
+.lv-card .card-footer .card-link:hover::after {
+  content: " >>>";
 }
 
-@keyframes show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .hero-carousel .carousel-inner, .hero-carousel .carousel-indicators {
   opacity: 0;
-  animation: show 2s linear 3s 1 forwards;
+  animation: show 3s linear 3s 1 forwards;
 }
 .hero-carousel .hero-carousel-headings {
   position: absolute;
@@ -12028,6 +12070,72 @@ footer nav a svg:hover {
 .hero-carousel .carousel-indicators button {
   border-radius: 100%;
   background-color: #ffb74d;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 2rem;
+  width: 100vw;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 9999;
+  animation-name: show-fade;
+  animation-duration: 8s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+}
+.popup .popup-balloons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  transform: translateY(150vh);
+  animation-name: fly-up;
+  animation-duration: 6s;
+  animation-delay: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.popup .popup-balloons .balloon1 {
+  fill: #8bc34a;
+  margin-bottom: 3rem;
+}
+.popup .popup-balloons .balloon2 {
+  fill: #dc3545;
+  margin-bottom: 5rem;
+}
+.popup .popup-balloons .balloon3 {
+  fill: #ffb74d;
+  margin-bottom: 2rem;
+}
+.popup .popup-balloons .balloon4 {
+  fill: #dc3545;
+  margin-bottom: 4rem;
+}
+.popup .popup-balloons .balloon5 {
+  fill: #8bc34a;
+  margin-bottom: 6rem;
+}
+.popup .popup-dialog {
+  max-width: 520px;
+  padding: 2rem;
+  background-image: linear-gradient(45deg, white, lightgreen, white);
+  border-radius: 2rem;
+  transform: translateY(150vh);
+  animation-name: fly-up;
+  animation-duration: 6s;
+  animation-delay: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=styles.css.map */

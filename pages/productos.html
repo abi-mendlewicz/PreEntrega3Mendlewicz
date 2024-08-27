@@ -20,7 +20,7 @@
       <div class="container-fluid p-0">
         <!-- logo con enlace a página de inicio -->
         <a class="navbar-brand" href="../index.html">
-          <img src="../assets/images/logo.png" alt="Logo" class="img-fluid">
+          <img src="../assets/images/logo.webp" alt="Logo" class="img-fluid">
         </a>
         <!-- fin logo con enlace a página de inicio -->
         <!-- botón para desplegar menú en offcanvas para pantallas menores a 992px -->
@@ -65,7 +65,276 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="my-5 mx-3 mx-lg-5">
+    <!-- títulos de página -->
+    <h1>Los mejores productos al mejor precio</h1>
+    <!-- fin títulos de página -->
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Productos</li>
+      </ol>
+    </nav>
+    <!-- fin breadcrumb -->
+    <!-- filtros de producto -->
+    <div class="row g-3 mt-3">
+      <div class="col-6 col-md-3 col-lg-2 mt-0 py-3">
+        <button type="button" class="btn btn-outline-primary w-100 active" data-bs-toggle="modal" data-bs-target="#alert-no-function">Todo</button>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 mt-0 py-3">
+        <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#alert-no-function">Perro</button>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 mt-0 py-3">
+        <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#alert-no-function">Gato</button>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 mt-0 py-3">
+        <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#alert-no-function">Otros </button>
+      </div>
+    </div>
+    <!-- fin filtros de producto -->
+    <!-- catálogo de productos -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/comida-perro.webp" alt="Comida para perros." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/comida-perro-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Comida para perros</h3>
+            <p class="card-text">$1.500</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/comida-gato.webp" alt="Comida para gatos." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/comida-gato-2.webp" alt="Comida para gatos." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-warning">AGOTADO</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Comida para gatos</h3>
+            <p class="card-text">$1.500</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/kit-pecera.webp" alt="Comida para perros." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/kit-pecera-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-success">OFERTA</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kit para peceras</h3>
+            <p class="card-text m-0 text-decoration-line-through">$2.750</p>
+            <p class="card-text text-success">PRECIO OFERTA $2.200</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/comida-gato.webp" alt="Comida para gatos." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/comida-gato-2.webp" alt="Comida para gatos." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-warning">AGOTADO</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Comida para gatos</h3>
+            <p class="card-text">$1.500</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/kit-pecera.webp" alt="Comida para perros." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/kit-pecera-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-success">OFERTA</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kit para peceras</h3>
+            <p class="card-text m-0 text-decoration-line-through">$2.750</p>
+            <p class="card-text text-success">PRECIO OFERTA $2.200</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/comida-perro.webp" alt="Comida para perros." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/comida-perro-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Comida para perros</h3>
+            <p class="card-text">$1.500</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/kit-pecera.webp" alt="Comida para perros." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/kit-pecera-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-success">OFERTA</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Kit para peceras</h3>
+            <p class="card-text m-0 text-decoration-line-through">$2.750</p>
+            <p class="card-text text-success">PRECIO OFERTA $2.200</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/comida-gato.webp" alt="Comida para gatos." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/comida-gato-2.webp" alt="Comida para gatos." class="card-img-2nd rounded-5">
+            <span class="card-tag position-absolute top-0 end-0 py-2 px-4 bg-warning">AGOTADO</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Comida para gatos</h3>
+            <p class="card-text">$1.500</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+      <article class="col">
+        <div class="lv-card">
+          <div class="position-relative">
+            <img src="../assets/images/productos/comida-perro.webp" alt="Comida para perros." class="card-img-top rounded-5">
+            <img src="../assets/images/productos/comida-perro-2.webp" alt="Comida para perros." class="card-img-2nd rounded-5">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Comida para perros</h3>
+            <p class="card-text">$1.500</p>
+          </div>
+          <div class="card-footer d-flex justify-content-end bg-transparent border-0">
+            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#alert-no-function">Añadir al carrito</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- fin catálogo de productos -->
+    <!-- paginación de productos -->    
+    <div class="row">
+      <div class="col my-5 d-flex justify-content-center">
+        <button type="button" class="btn btn-lg btn-outline-primary d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#spinner" aria-expanded="false" aria-controls="collapseWidthExample">
+          <span>Cargar más productos</span>
+          <div class="spinner-border collapse collapse-horizontal ms-2" id="spinner" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </button>
+      </div>
+    </div>
+    <!-- fin paginación de productos -->
+    <!-- popup cupón de descuento -->
+    <div id="discount-coupon-popup" class="popup" tabindex="-1">
+      <div class="popup-balloons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="balloon1 bi bi-balloon-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2 2 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224zM4.352 3.356a4 4 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5s-.226.496-.498.542c-.95.162-1.749.78-2.173 1.617a.6.6 0 0 1-.52.341c-.346 0-.599-.329-.457-.644"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="balloon2 bi bi-balloon-heart" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="balloon3 bi bi-balloon-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2 2 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224zM4.352 3.356a4 4 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5s-.226.496-.498.542c-.95.162-1.749.78-2.173 1.617a.6.6 0 0 1-.52.341c-.346 0-.599-.329-.457-.644"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="balloon4 bi bi-balloon-heart" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="balloon5 bi bi-balloon-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2 2 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224zM4.352 3.356a4 4 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5s-.226.496-.498.542c-.95.162-1.749.78-2.173 1.617a.6.6 0 0 1-.52.341c-.346 0-.599-.329-.457-.644"/>
+        </svg>
+      </div>
+      <div class="popup-dialog">
+        <div class="popup-content">
+          <div class="popup-header">
+            <h2>15% OFF <small>en tu primera compra</small></h2>
+          </div>
+          <div class="popup-body">
+            <p class="mb-0">Agregando el cupón <strong>#AmoAMiMascota</strong></p>
+            <p class="mb-0">Disfruta de nuestros descuentos mientras tu mascota disfruta de nuestros productos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin popup cupón de descuento -->
+    <!-- modal carrito -->
+    <div class="modal fade" id="carrito-modal" tabindex="-1" aria-labelledby="carrito-modal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon me-2" viewBox="0 0 16 16">
+                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"/>
+                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+              </svg>
+              ATENCIÓN
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Tu carrito está vacío.</p>
+            <p class="mb-0">Añade productos desde nuestra tienda.</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-sm btn-outline-warning text-primary" data-bs-dismiss="modal">Entendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin modal carrito -->
+    <!-- modal alerta de funciones no desarrolladas -->
+    <div class="modal fade" id="alert-no-function" tabindex="-1" aria-labelledby="alert-no-function" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon me-2" viewBox="0 0 16 16">
+                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"/>
+                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+              </svg>
+              ATENCIÓN
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Esta función no está disponible aún. Lo sentimos.</p>
+            <p class="mb-0">Por favor, vuelve a intentarlo en su próxima visita!</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-sm btn-outline-warning text-primary" data-bs-dismiss="modal">Seguir comprando</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin modal alerta de funciones no desarrolladas -->
   </main>
   <footer>
     <div class="row m-0 py-2 py-sm-3 px-3 px-lg-5 bg-primary">

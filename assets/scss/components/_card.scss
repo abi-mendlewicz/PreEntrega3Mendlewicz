@@ -29,9 +29,11 @@
       font-family: map-get($lv_fonts, link);
       font-weight: 200;
       text-decoration: underline;
-      align-self: end;
       &:hover {
-        font-weight: 600;
+        font-style: italic;
+      }
+      &:hover::after {
+        content: " >>>";
       }
     }
   }
