@@ -1,3 +1,25 @@
+/* Fondos */
+$fondos-path: "../../assets/images/fondos/";
+
+.bg-footprints {
+  background-image: url($fondos-path + "footprints.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Filtros */
+.lv-filter-grayscale {
+  filter: grayscale(1);
+}
+
+/* Listas */
+.list-group {
+  a.list-group-item {
+    background-color: transparent;
+    color: $blue;
+  }
+}
+  
 @include media-breakpoint-up(lg) {
   /* Bordes */
   .lv-border-rounded-top-right {
@@ -6,10 +28,5 @@
 
   .lv-border-rounded-bottom-left {
     @include border-bottom-start-radius(50%);
-  }
-
-  /* Filtros */
-  .lv-filter-grayscale {
-    filter: grayscale(1);
   }
 }

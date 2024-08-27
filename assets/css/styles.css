@@ -11923,6 +11923,24 @@ body nav ul li {
   display: inline-block;
 }
 
+/* Fondos */
+.bg-footprints {
+  background-image: url("../../assets/images/fondos/footprints.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Filtros */
+.lv-filter-grayscale {
+  filter: grayscale(1);
+}
+
+/* Listas */
+.list-group a.list-group-item {
+  background-color: transparent;
+  color: #003366;
+}
+
 @media (min-width: 992px) {
   /* Bordes */
   .lv-border-rounded-top-right {
@@ -11930,10 +11948,6 @@ body nav ul li {
   }
   .lv-border-rounded-bottom-left {
     border-bottom-left-radius: 50%;
-  }
-  /* Filtros */
-  .lv-filter-grayscale {
-    filter: grayscale(1);
   }
 }
 header nav a {
