@@ -65,7 +65,75 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="my-5 mx-3 mx-lg-5">
+    <!-- títulos de página -->
+    <h1>Nuestra historia</h1>
+    <!-- fin títulos de página -->
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Quiénes somos</li>
+      </ol>
+    </nav>
+    <!-- fin breadcrumb -->
+    <section class="pt-3">
+      <!-- imágenes y texto en 2 filas de 1 y 2 columnas cada una responsivamente -->
+      <div class="row g-3 g-lg-0 my-3 align-items-center">
+        <figure class="col-12 col-lg-6 pe-lg-3 figure">
+          <img src="../assets/images/quienes-somos/angela.webp" class="figure-img img-fluid rounded-circle" alt="La doctora Ángela García atendiendo a un lindo gatito.">
+          <figcaption class="figure-caption">
+            <h2 class="text-center text-primary">Dra. Veterinaria Ángela García</h2>
+          </figcaption>
+        </figure>
+        <div class="col-12 col-lg-6 ps-lg-3">
+          <div class="card-body p-0">
+            <p class="card-text">En La Veterinaria, nuestra historia se construye sobre una base sólida de pasión y dedicación, iniciada por el Dr. Martín Méndez, quien fundó nuestra clínica en [año de fundación]. Con más de [número] años de experiencia, el Dr. Méndez estableció La Veterinaria con el firme propósito de brindar un cuidado veterinario excepcional y personalizado, centrado en el bienestar de cada mascota. Su compromiso con la excelencia y el amor por los animales siguen siendo la esencia de nuestra clínica.</p>
+            <p class="card-text">A lo largo de los años, hemos tenido el privilegio de sumar al equipo a la Dra. Ángela García, cuya experiencia y enfoque innovador han complementado perfectamente nuestra misión. Con una destacada trayectoria en [especialidad o experiencia de la Dra. García], la Dra. García aporta una perspectiva valiosa y un compromiso igual de profundo hacia la salud y el bienestar animal. Su dedicación y habilidades han fortalecido nuestro equipo, permitiéndonos ofrecer un cuidado aún más integral y especializado a nuestros pacientes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-3 g-lg-0 my-3 align-items-center">
+        <figure class="col-12 col-lg-6 ps-lg-3 order-lg-1 figure">
+          <img src="../assets/images/quienes-somos/martin.webp" class="figure-img img-fluid rounded-circle" alt="El doctor Martín Méndez junto a Firulete, un paciente distinguido.">
+          <figcaption class="figure-caption">
+            <h2 class="text-center text-primary">Dr. Veterinario Martín Méndez</h2>
+          </figcaption>
+        </figure>
+        <div class="col-12 col-lg-6 pe-lg-3">
+          <div class="card-body p-0">
+            <p class="card-text">En La Veterinaria, nos guiamos por los valores de empatía, integridad y compromiso. Cada miembro de nuestro equipo comparte la misma visión de proporcionar atención de alta calidad con un enfoque humano y respetuoso. Nos esforzamos por garantizar que cada visita a nuestra clínica sea una experiencia positiva y que cada mascota reciba el mejor tratamiento posible. Valoramos profundamente la confianza que nos brindas y trabajamos incansablemente para superarla en cada interacción.</p>
+            <p class="card-text">Mirando hacia el futuro, La Veterinaria sigue fiel a los principios establecidos por el Dr. Méndez y se enriquece con la experiencia y el conocimiento de la Dra. García. Estamos dedicados a mantenernos a la vanguardia de la medicina veterinaria y a ofrecer un entorno cálido y acogedor para todos. Gracias por permitirnos ser parte del cuidado y bienestar de tus queridos compañeros peludos. ¡Esperamos continuar ofreciéndote la mejor atención posible y seguir creciendo junto a ti y tu mascota!</p>
+          </div>
+        </div>
+      </div>
+      <!-- fin imágenes y texto en 2 filas de 1 y 2 columnas cada una responsivamente -->
+    </section>
+    <!-- modal carrito -->
+    <div class="modal fade" id="carrito-modal" tabindex="-1" aria-labelledby="carrito-modal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <div class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon me-2" viewBox="0 0 16 16">
+                <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z"/>
+                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+              </svg>
+              ATENCIÓN
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">Tu carrito está vacío.</p>
+            <p class="mb-0">Añade productos desde nuestra tienda.</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-sm btn-outline-warning text-primary" data-bs-dismiss="modal">Entendido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin modal carrito -->
   </main>
   <footer>
     <div class="row m-0 py-2 py-sm-3 px-3 px-lg-5 bg-primary">
